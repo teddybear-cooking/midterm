@@ -1,0 +1,15 @@
+{
+    "products": [
+      { "code": "p001", "name": "Product A", "price": 100 },
+      { "code": "p002", "name": "Product B", "price": 200 },
+      { "code": "p003", "name": "Product C", "price": 150 },
+      { "code": "p004", "name": "Product D", "price": 250 },
+      { "code": "p005", "name": "Product E", "price": 180 },
+      { "code": "p006", "name": "Product F", "price": 300 },
+      { "code": "p007", "name": "Product G", "price": 220 },
+      { "code": "p008", "name": "Product H", "price": 275 },
+      { "code": "p009", "name": "Product I", "price": 160 },
+      { "code": "p010", "name": "Product J", "price": 190 }
+    ]
+  }
+  
