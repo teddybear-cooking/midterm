@@ -34,7 +34,8 @@ function QuotationTable({ data, deleteByIndex, onClearAll, onDiscountChange }) {
     );
   }
 
-  const total = data.reduce((acc, v) => acc + (v.qty * v.ppu - (v.discount || 0)), 0);
+  // Calculate total with discount applied once per row
+  const total = data.reduce((acc, v) => acc + ((v.qty * v.ppu) - (v.discount || 0)), 0);
   const totalDiscount = data.reduce((acc, v) => acc + (v.discount || 0), 0);
 
   const handleDelete = (index) => {
@@ -70,7 +71,8 @@ function QuotationTable({ data, deleteByIndex, onClearAll, onDiscountChange }) {
           </TableHead>
           <TableBody>
             {data.map((v, i) => {
-              let amount = v.qty * v.ppu - (v.discount || 0);
+              // Calculate amount with discount applied once per row
+              let amount = (v.qty * v.ppu) - (v.discount || 0);
               return (
                 <TableRow key={i}>
                   <TableCell align="center">
